@@ -1,0 +1,38 @@
+﻿@model DogViewModel
+
+<h1> Create </h1>
+
+<hr />    <!-- a header line for spacing or dividing the sections -->
+
+<div class="row">
+    <div class="col-6">
+        <!-- -12 is the entire width   and -6 is the half width-->
+        <!-- if formatting does not seem to be at right positons press cntrl+k+d-->
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Create a new dog</h5>
+            </div>
+            <div class="card-body">
+                <form asp-controller="HelloWorld" asp-action="CreateDog" method="post">
+
+                    <div class="mb-3">
+                        <!-- mb-3 stands for margin button 3(3 because three sections)-->
+                        <label class="form-label">Dog Name</label>
+                        <input asp-for=Name type="text" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Dog Age</label>
+                        <input asp-for=Age type="number" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <button type ="submit" class="btn btn-primary">Save</button> <!-- primary for blye-->
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</div>
