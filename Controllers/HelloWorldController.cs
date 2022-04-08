@@ -13,7 +13,8 @@ namespace FirstMVCProject.Controllers
 
         public IActionResult Index()
         {
-            return View(dogs);
+            return View(dogs);   //hello
+
             /*DogViewModel doggo = new DogViewModel()
             { Name = "Don",Age = 2};
             return View(doggo);
